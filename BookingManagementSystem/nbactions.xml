@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>run</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
+            </goals>
+            <properties>
+                <exec.args>-DAWS_ACCESS_KEY_ID=AKIAYS2NVZP2JXJO6WWC -DAWS_SECRET_ACCESS_KEY=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 -classpath %classpath com.bookingsystemapp.bookingmanagementsystem.VacayStarApp2</exec.args>
+                <exec.executable>java</exec.executable>
+            </properties>
+        </action>
+        <action>
+            <actionName>debug</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
+            </goals>
+            <properties>
+                <exec.args>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address} -DAWS_ACCESS_KEY_ID=AKIAYS2NVZP2JXJO6WWC -DAWS_SECRET_ACCESS_KEY=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 -classpath %classpath com.bookingsystemapp.bookingmanagementsystem.VacayStarApp2</exec.args>
+                <exec.executable>java</exec.executable>
+                <jpda.listen>true</jpda.listen>
+            </properties>
+        </action>
+        <action>
+            <actionName>profile</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
+            </goals>
+            <properties>
+                <exec.args>-DAWS_ACCESS_KEY_ID=AKIAYS2NVZP2JXJO6WWC -DAWS_SECRET_ACCESS_KEY=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 -classpath %classpath com.bookingsystemapp.bookingmanagementsystem.VacayStarApp2</exec.args>
+                <exec.executable>java</exec.executable>
+            </properties>
+        </action>
+    </actions>
